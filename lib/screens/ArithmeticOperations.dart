@@ -9,8 +9,14 @@ class Arithmeticoperations extends StatefulWidget {
 }
 
 class _ArithmeticoperationsState extends State<Arithmeticoperations> {
-  int first = 0;
-  int second = 0;
+  //controller
+  final TextEditingController firstController = TextEditingController(
+    text: "50",
+  );
+
+  final TextEditingController secondContoller = TextEditingController(
+    text: "31",
+  );
   int result = 0;
   @override
   Widget build(BuildContext context) {
@@ -27,7 +33,8 @@ class _ArithmeticoperationsState extends State<Arithmeticoperations> {
             SizedBox(height: 12),
             TextField(
               keyboardType: TextInputType.number,
-              onChanged: (value) => {first = int.tryParse(value) ?? 0},
+              // onChanged: (value) => {first = int.tryParse(value) ?? 0},
+              controller: firstController,
               decoration: InputDecoration(
                 label: Text("Enter your first number:"),
                 hintText: ("eg...55"),
@@ -37,7 +44,8 @@ class _ArithmeticoperationsState extends State<Arithmeticoperations> {
             SizedBox(height: 12),
             TextField(
               keyboardType: TextInputType.number,
-              onChanged: (value) => {second = int.tryParse(value) ?? 0},
+              // onChanged: (value) => {second = int.tryParse(value) ?? 0},
+              controller: secondContoller,
               decoration: InputDecoration(
                 label: Text("Enter your second number:"),
                 hintText: ("eg...55"),
@@ -51,7 +59,9 @@ class _ArithmeticoperationsState extends State<Arithmeticoperations> {
               child: ElevatedButton(
                 onPressed: () {
                   setState(() {
-                    result = first + second;
+                    result =
+                        (int.tryParse(firstController.text) ?? 0) +
+                        (int.tryParse(secondContoller.text) ?? 0);
                   });
                 },
                 child: Text("Calculate", style: TextStyle(fontSize: 20)),

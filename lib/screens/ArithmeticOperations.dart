@@ -42,7 +42,13 @@ class _ArithmeticoperationsState extends State<Arithmeticoperations> {
                 decoration: InputDecoration(
                   label: Text("Enter your first number:"),
                   hintText: ("eg...55"),
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.pink),
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -59,7 +65,9 @@ class _ArithmeticoperationsState extends State<Arithmeticoperations> {
                 decoration: InputDecoration(
                   label: Text("Enter your second number:"),
                   hintText: ("eg...55"),
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {

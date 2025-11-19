@@ -17,7 +17,7 @@ class FlutterLayoutScreen extends StatelessWidget {
           children: [
             Container(
               height: 100,
-              width: 300,
+              width: 372,
 
               decoration: BoxDecoration(
                 // color: Colors.lightBlueAccent,

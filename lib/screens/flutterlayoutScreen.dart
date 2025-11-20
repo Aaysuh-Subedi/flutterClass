@@ -12,12 +12,26 @@ class FlutterLayoutScreen extends StatelessWidget {
       ),
 
       body: Padding(
-        padding: EdgeInsetsGeometry.all(10),
-        child: Row(
+        padding: EdgeInsets.all(10),
+        child: Column(
           children: [
+            Row(
+              children: [
+                Container(
+                  height: 100,
+                  width: 400,
+
+                  decoration: BoxDecoration(
+                    // color: Colors.lightBlueAccent,
+                    border: Border.all(color: Colors.black, width: 4),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 10),
             Container(
               height: 100,
-              width: 372,
+              width: 400,
 
               decoration: BoxDecoration(
                 // color: Colors.lightBlueAccent,

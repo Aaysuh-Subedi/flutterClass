@@ -83,7 +83,7 @@ class _DashboardState extends State<Dashboard> {
                   Navigator.push(
                     context,
                     MaterialPageRoute<void>(
-                      builder: (context) => const Arithmeticoperations(),
+                      builder: (context) => const ArithmeticOperations(),
                     ),
                   );
                 },

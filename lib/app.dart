@@ -1,4 +1,5 @@
 import 'package:firstproject/screens/RichTextScreen.dart';
+import 'package:firstproject/screens/columnScreen.dart';
 import 'package:firstproject/screens/dashboard.dart';
 import 'package:firstproject/screens/flutterlayoutScreen.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +9,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: FlutterLayoutScreen());
+    return MaterialApp(home: Dashboard());
   }
 }

@@ -1,6 +1,7 @@
 import 'package:firstproject/screens/RichTextScreen.dart';
 import 'package:firstproject/screens/columnScreen.dart';
 import 'package:firstproject/screens/containerscreen.dart';
+import 'package:firstproject/screens/customelayout.dart';
 import 'package:firstproject/screens/dashboard.dart';
 import 'package:firstproject/screens/flexible_expanded_screen.dart';
 import 'package:firstproject/screens/flutterlayoutScreen.dart';
@@ -12,6 +13,6 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: FlexibleExpandedScreen());
+    return MaterialApp(home: Customelayout());
   }
 }
